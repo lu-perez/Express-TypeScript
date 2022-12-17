@@ -53,3 +53,12 @@ npm run tsc
 ```console
 node build/index.js
 ```
+or
+```console
+npm start
+```
+
+8. Run dev mode
+```console
+npm run dev
+```
