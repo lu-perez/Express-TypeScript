@@ -37,6 +37,7 @@ npm run tsc -- --init
 ```json
 {
   ...
+  "resolveJsonModule": true,
   "outDir": "./build",
   "noUnusedLocals": true,
   "noUnusedParameters": true,
