@@ -54,3 +54,38 @@ npm run tsc
 ```console
 node build/index.js
 ```
+
+8. Install & config linter
+```console
+npm i ts-standard -D
+```
+
+9. Update __package.json__:
+* Scripts:
+```json
+"scripts": {
+  ...
+  "lint": "ts-standard"
+}
+```
+* Config:
+```json
+"eslintConfig": {
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["./node_modules/ts-standard/eslintrc.json"]
+}
+"ts-standard": {
+    "ignore": [
+      "build"
+    ]
+  }
+```
+*Close & Open VSCode*
+
+* Run linter:
+```
+npm run lint
+npm run lint:fix
+```
