@@ -60,15 +60,14 @@ node build/index.js
 npm i ts-standard -D
 ```
 
-9. Update __package.json__:
-* Scripts:
+* Update __package.json__:
 ```json
 "scripts": {
   ...
-  "lint": "ts-standard"
+  "lint": "ts-standard",
+  "lint:fix": "ts-standard --fix"
 }
 ```
-* Config:
 ```json
 "eslintConfig": {
   "parserOptions": {
@@ -77,10 +76,10 @@ npm i ts-standard -D
   "extends": ["./node_modules/ts-standard/eslintrc.json"]
 }
 "ts-standard": {
-    "ignore": [
-      "build"
-    ]
-  }
+  "ignore": [
+    "build"
+  ]
+}
 ```
 *Close & Open VSCode*
 
