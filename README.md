@@ -84,7 +84,7 @@ npm i ts-standard -D
 *Close & Open VSCode*
 
 * Run linter:
-```
+```console
 npm run lint
 npm run lint:fix
 ```
