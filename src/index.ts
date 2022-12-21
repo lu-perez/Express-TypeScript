@@ -1,5 +1,5 @@
 import express from 'express'
-import diaryRouter from './routes/diaries'
+import diaryRouter from './routes/diaries.route'
 
 const app = express()
 const PORT = 5555
@@ -9,6 +9,7 @@ app.get('/ping', (_req, res) => {
   res.send('pong')
 })
 
+app.use(express.json())
 app.use(diaryRouter)
 
 app.listen(PORT, () => {
